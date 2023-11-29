@@ -1,0 +1,19 @@
+.l-section {
+  padding: rem(120px) 0;
+
+  .c-container {
+    @include flex-element(column, start, start);
+  }
+
+  &__header {
+    width: 100%;
+
+    @include media-up(md) {
+      max-width: rem(800px);
+    }
+
+    .c-title {
+      margin-bottom: rem(16px);
+    }
+  }
+}

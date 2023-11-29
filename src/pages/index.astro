@@ -1,7 +1,20 @@
 ---
+import Hero from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-  <h1>Hello Astro</h1>
+  <Hero />
+
+  <section class="l-section">
+    <div class="c-container">
+      <header class="l-section__header">
+        <h2 class="c-title">Café com novos membros</h2>
+        <p class="c-title c-title--subtitle">
+          Você que quer saber mais sobre a Igreja Batista da Lagoinha e como
+          fazer parte da membresia e voluntariado? Venha participar!
+        </p>
+      </header>
+    </div>
+  </section>
 </Layout>

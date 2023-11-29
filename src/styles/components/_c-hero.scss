@@ -1,0 +1,109 @@
+.c-hero {
+  background-color: #74a0a9;
+  overflow: hidden;
+
+  padding-bottom: rem(48px);
+
+  @include media-up(md) {
+    background: linear-gradient(90deg, #74a0a9 0.76%, #54848e 56.42%);
+    padding-bottom: initial;
+  }
+
+  .c-container {
+    position: relative;
+
+    @include flex-element(column-reverse, start, space-between);
+
+    @include media-up(md) {
+      @include flex-element(row, start, space-between);
+    }
+  }
+
+  &__wrapper {
+    flex: 100%;
+    max-width: 100%;
+
+    @include media-up(md) {
+      max-width: rem(696px);
+    }
+
+    & + .c-hero__wrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      @include media-up(md) {
+        justify-content: flex-end;
+      }
+
+      .c-hero__image {
+        display: block;
+        width: rem(476px);
+      }
+    }
+
+    & + .c-hero__wrapper::after {
+      @media (max-width: 873px) {
+        content: "";
+        width: 100%;
+        height: 500px;
+        background-image: linear-gradient(
+          0deg,
+          #74a0a9 5.36%,
+          rgba(85, 134, 143, 0) 100%
+        );
+        position: absolute;
+        top: 127px;
+        left: 0;
+        z-index: 1;
+        pointer-events: none;
+      }
+    }
+  }
+
+  .c-logo {
+    padding-top: rem(32px);
+    margin-bottom: rem(64px);
+    position: absolute;
+    top: 0;
+
+    @include media-up(md) {
+      position: relative;
+    }
+  }
+
+  &__tag {
+    font-size: rem(12px);
+    line-height: rem(18px);
+    color: var(--0ff-white);
+    text-transform: uppercase;
+    display: block;
+
+    border-radius: 8px;
+    background: rgba(192, 192, 204, 0.3);
+    backdrop-filter: blur(2px);
+    padding: rem(16px);
+    margin-bottom: rem(16px);
+
+    @include media-up(md) {
+      padding: rem(8px) rem(24px);
+      display: inline-flex;
+    }
+  }
+
+  .c-title {
+    color: var(--0ff-white);
+    margin-bottom: rem(16px);
+
+    &--subtitle {
+      margin-bottom: rem(24px);
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    color: var(--0ff-white);
+    gap: rem(8px);
+  }
+}

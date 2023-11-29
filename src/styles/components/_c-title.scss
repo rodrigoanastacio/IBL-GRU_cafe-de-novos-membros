@@ -1,0 +1,26 @@
+.c-title {
+  font-size: rem(40px);
+  line-height: rem(50px);
+
+  &--display {
+    font-size: rem(32px);
+    line-height: rem(40px);
+    font-weight: var(--font-extra-bold);
+
+    @include media-up(md) {
+      font-size: rem(64px);
+      line-height: rem(74px);
+    }
+  }
+
+  &--subtitle {
+    font-size: rem(20px);
+    line-height: rem(28px);
+    font-weight: var(--font-md);
+
+    @include media-up(md) {
+      font-size: rem(24px);
+      line-height: rem(32px);
+    }
+  }
+}
