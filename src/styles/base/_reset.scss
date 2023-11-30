@@ -10,12 +10,16 @@
 }
 
 :root {
-  --gray-100: #74a0a9;
+  --gray-100: #d1d1d1;
+  --gray-600: #818e91;
   --gray-700: #2a2d33;
   --gray-800: #1e1e1e;
 
-  --0ff-white: #fdf1e8;
+  --color-primary: #74a0a9;
 
+  --off-white: #fdf1e8;
+
+  --font-regular: 400;
   --font-md: 500;
   --font-extra-bold: 800;
 }
@@ -25,7 +29,7 @@ body {
   font-family: "Montserrat", sans-serif;
 
   p {
-    color: var(--gray-100);
+    color: var(--gray-600);
   }
 
   a {

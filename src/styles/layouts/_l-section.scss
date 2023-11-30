@@ -14,6 +14,25 @@
 
     .c-title {
       margin-bottom: rem(16px);
+
+      &--subtitle {
+        margin-bottom: rem(32px);
+      }
     }
+  }
+
+  &__wrapper {
+    width: 100%;
+    gap: rem(32px);
+    display: flex;
+    flex-direction: column;
+
+    @include media-up(lg) {
+      flex-direction: row;
+    }
+  }
+
+  .card-link {
+    width: 100%;
   }
 }

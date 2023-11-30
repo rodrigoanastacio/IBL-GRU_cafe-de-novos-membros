@@ -75,7 +75,7 @@
   &__tag {
     font-size: rem(12px);
     line-height: rem(18px);
-    color: var(--0ff-white);
+    color: var(--off-white);
     text-transform: uppercase;
     display: block;
 
@@ -92,7 +92,7 @@
   }
 
   .c-title {
-    color: var(--0ff-white);
+    color: var(--off-white);
     margin-bottom: rem(16px);
 
     &--subtitle {
@@ -103,7 +103,7 @@
   &__info {
     display: flex;
     align-items: center;
-    color: var(--0ff-white);
+    color: var(--off-white);
     gap: rem(8px);
   }
 }
