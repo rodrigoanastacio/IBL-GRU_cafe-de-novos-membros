@@ -1,11 +1,9 @@
 .footer {
-  .c-container {
-  }
-
   &__copy {
     padding: rem(32px) rem(16px);
     border-top: 1px solid rgba(204, 204, 204, 0.4);
     width: 100%;
     text-align: center;
+    font-size: rem(14px);
   }
 }

@@ -1,6 +1,11 @@
 .c-title {
-  font-size: rem(40px);
-  line-height: rem(50px);
+  font-size: rem(32px);
+  line-height: rem(40px);
+
+  @include media-up(md) {
+    font-size: rem(40px);
+    line-height: rem(50px);
+  }
 
   &--display {
     font-size: rem(32px);
