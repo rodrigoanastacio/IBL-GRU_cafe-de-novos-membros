@@ -28,12 +28,12 @@ import "../styles/main.scss";
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={Astro.url} />
+    <meta property="og:url" content={Astro.site} />
     <meta property="og:title" content=`${title}` />
     <meta property="og:description" content=`${description}` />
     <meta
       property="og:image"
-      content=`${Astro.url}assets/images/share-og.png`
+      content=`${Astro.site}assets/images/share-og.png`
     />
     <title>{title}</title>
   </head>
