@@ -61,6 +61,14 @@
     }
   }
 
+  &__headline {
+    @media (max-width: 873px) {
+      position: absolute;
+      bottom: 0px;
+      z-index: 2;
+    }
+  }
+
   .c-logo {
     padding-top: rem(32px);
     margin-bottom: rem(64px);
